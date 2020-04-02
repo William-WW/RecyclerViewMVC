@@ -9,11 +9,12 @@ import id.ac.unhas.infocovid19.model.Provinsi
 import kotlinx.android.synthetic.main.recyclerview_item_provinsi.view.*
 
 class ProvinsiAdapter(private val daftarProvinsi: ArrayList<Provinsi>) :
+
     RecyclerView.Adapter<ProvinsiAdapter.ProvinsiHolder>() {
     class ProvinsiHolder(itemView: View):RecyclerView.ViewHolder(itemView) {
         fun bind(itemProvinsi: Provinsi){
             with(itemView){
-                nama_provinsi.text = itemProvinsi.provinsi
+                nama_provinsi.text =  itemProvinsi.provinsi
                 data_provinsi.text = "${itemProvinsi.kasusPosi} positif," +
                         " ${itemProvinsi.kasusSemb} sembuh, ${itemProvinsi.kasusMeni} meninggal"
             }
