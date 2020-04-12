@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import id.ac.unhas.infocovid19.R
 import id.ac.unhas.infocovid19.model.PerKasus
+import id.ac.unhas.infocovid19.model.Provinsi
 import kotlinx.android.synthetic.main.recyclerview_item_perkasus.view.*
 
 class    PerkasusAdapter(private val daftarPerkasus: ArrayList<PerKasus>) :

@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import id.ac.unhas.infocovid19.BuildConfig
 import id.ac.unhas.infocovid19.R
+import id.ac.unhas.infocovid19.model.DataHarian
 import id.ac.unhas.infocovid19.model.DataProvinsi
 import id.ac.unhas.infocovid19.model.Provinsi
 import id.ac.unhas.infocovid19.network.ApiEndPoint
