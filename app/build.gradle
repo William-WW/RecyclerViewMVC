@@ -13,7 +13,13 @@ android {
         versionCode 1
         versionName "1.0"
 
+        buildConfigField 'String', 'BASE_URL', '"https://indonesia-covid-19.mathdro.id/api/"'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
     }
 
     buildTypes {
@@ -41,6 +47,10 @@ dependencies {
     //gson json converter
     implementation 'com.google.code.gson:gson:2.8.5'
 
+    implementation 'com.squareup.retrofit2:retrofit:2.7.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.1'
     //RecyclerView
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 }
+
+

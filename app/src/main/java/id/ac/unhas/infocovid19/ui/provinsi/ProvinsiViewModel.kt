@@ -6,21 +6,20 @@ import id.ac.unhas.infocovid19.model.Provinsi
 class ProvinsiViewModel(
     private val repository: ProvinsiRepository
 ) : ViewModel() {
-    private var _movies = ArrayList<Provinsi>()
+    private var _provinsi = ArrayList<Provinsi>()
     val movies:ArrayList<Provinsi>
-        get() = _movies
+        get() = _provinsi
 
-    fun getMoviesFromRepo(){
-        //_movies.clear()
-        _movies.apply {
+    fun getProvinsiFromRepo(){
+        _provinsi.apply {
             if(isEmpty()){
-                addAll(repository.getMoviesFromJsonString())
+                addAll(repository.getProvinsiFromJsonString())
             }
         }
     }
 
     override fun onCleared() {
         super.onCleared()
-        _movies.clear()
+        _provinsi.clear()
     }
 }
