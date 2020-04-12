@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/pasienno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="@string/patient_no" />
+
+    <TextView
+        android:id="@+id/data_pasien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:justificationMode="inter_word"
+        tools:text="@string/patient_data" />
+
+</LinearLayout>
